@@ -73,7 +73,7 @@
         <div class="subtitle">تامین‌کننده مواد شیمیایی و تجهیزات آزمایشگاهی</div>
         <p>وب‌سایت تخصصی ما به زودی با قابلیت‌های جدید راه‌اندازی خواهد شد.</p>
         
-        <!-- شمارش معکوس ۱۵ روزه -->
+        <!-- شمارش معکوس -->
         <div class="timer-container">
             <div class="time-box"><span id="days">00</span><label>روز</label></div>
             <div class="time-box"><span id="hours">00</span><label>ساعت</label></div>
@@ -81,12 +81,9 @@
             <div class="time-box"><span id="seconds">00</span><label>ثانیه</label></div>
         </div>
 
-        <!-- اطلاعات تماس مدیر فروش -->
+        <!-- اطلاعات تماس بخش فروش -->
         <div class="contact-box">
             <h3>ارتباط با بخش فروش و بازرگانی:</h3>
-            <div class="contact-item">
-                <span>مسئول:</span> <strong>امیرحسین زارعی</strong> (مدیر فروش و بازرگانی)
-            </div>
             <div class="contact-item" style="direction: ltr; justify-content: flex-end;">
                 <span>تلفن تماس:</span> <a href="tel:+989192923583">+98 919 292 3583</a>
             </div>
@@ -97,7 +94,7 @@
     </div>
 
     <script>
-    // تاریخ و ساعت ثابت پایان شمارش معکوس (۳۰ روز آینده: ۲۳ آذر ۱۴۰۵ / 2026-12-08)
+    // تاریخ و ساعت پایان شمارش معکوس
     const targetDate = new Date("2026-12-08T23:59:59").getTime();
 
     function updateCountdown() {
@@ -118,7 +115,7 @@
         } else {
             // وقتی زمان به اتمام رسید
             clearInterval(timerInterval);
-            document.querySelector(".countdown-container").innerHTML = `
+            document.querySelector(".timer-container").innerHTML = `
                 <div style="font-size: 1.5rem; font-weight: bold; color: #2ecc71; padding: 20px;">
                     وب‌سایت آرنا نیک تجهیز آزما رونمایی شد!
                 </div>
